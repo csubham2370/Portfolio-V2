@@ -38,7 +38,7 @@ const Portfolio = () => {
           {items.map(({ id, logo, name, p }) => (
             <div
               key={id}
-              className="md:w-[400px] md:h-[400px] border-[2px] rounded-lg shadow-lg p-2 cursor-pointer hover:scale-110 duration-300 my-5 "
+              className="md:w-[350px] md:h-[400px] border-[2px] rounded-lg shadow-lg p-2 cursor-pointer hover:scale-110 duration-300 my-5 "
             >
               <img
                 src={logo}

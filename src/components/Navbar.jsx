@@ -23,8 +23,8 @@ const Navbar = () => {
         <div className='flex space-x-2 '> 
 
           <img src={pic} className='h-12 w-12 rounded-full' alt="logo" />
-          <h1 className='font-semibold text-xl cursor-pointer'>Subham <span className='text-green-500 text-2xl'>@</span>
-          <p className='text-sm'>Full Stack Developer</p>
+          <h1 className='font-semibold text-xl cursor-pointer'>Subham <span className='text-green-500 text-2xl'></span>
+          <p className='text-sm text-blue-500'>Full Stack Developer</p>
           </h1>
         </div>
         {/* Desktop navbar */}
@@ -40,7 +40,7 @@ const Navbar = () => {
           activeClass='active'>{items.text}</Link></li>))}
           </ul>
           <div onClick={()=>setMenu(!menu)} className='md:hidden'>
-        {menu ? <RxHamburgerMenu  size={24}/>:<RxCross1 size={24}/>}
+        {menu ?<RxCross1 size={24}/> : <RxHamburgerMenu  size={24}/>}
       </div>
         </div>
        
